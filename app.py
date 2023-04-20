@@ -47,4 +47,13 @@ if __name__=="__main__":
 # now in github make a new repository 
 # follow the steps below "create a new repository on the command line"
 # git init ---to initialize the repository
-# as we already had the readme file so we will do ---git add .
+# as we already had the readme file so we will do ---git add . ---to make ready all files for git commit
+# to check the file tracking --- git status
+# git commit -m "first commit" will give error the we need to give the repo id.---git config --global user.email "you@example.com"
+# now give your name  ---git config --global user.name "Your Name"
+# NOW git commit -m "first commit" to creste mode or we can say ready to commit the all files
+# to go to main branch ---git branch -M main
+# to see the branch --- git branch
+# now provied the address where file is need to store in reo.---git remote add origin https://github.com/RAJNISH1996/Fire-forest-ML-project.git
+#  now to send file ---git push -u origin main
+# now just follow the coming instructions
