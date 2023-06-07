@@ -29,10 +29,10 @@ def predict_datapoint():
         Classes = float(request.form.get('Classes'))
         Region = float(request.form.get('Region'))
 
-        new_data_scaled=standard_scaler.transform([[Temperature,RH,Ws,Rain,FFMC,DMC,ISI,Classes,Region]])
-        result=ridge_model.predict(new_data_scaled)
+        new_data_scaled=standard_scaler.transform([[Temperature,RH,Ws,Rain,FFMC,DMC,ISI,Classes,Region]])#standardization of new data
+        result=ridge_model.predict(new_data_scaled)#o/p will be in list
 
-        return render_template('home.html',result=result[0])
+        return render_template('home.html',result=result[0])#o/p will be in list,hence we take [0]
 
     else:
         return render_template('home.html')
