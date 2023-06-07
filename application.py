@@ -57,3 +57,8 @@ if __name__=="__main__":
 # now provied the address where file is need to store in reo.---git remote add origin https://github.com/RAJNISH1996/Fire-forest-ML-project.git
 #  now to send file ---git push -u origin main
 # now just follow the coming instructions
+
+# FOR AWS DEPLOYMENT STEP 
+# first make configuration file(here is .ebextensions for deploying on benstak)
+# create python config file and write code 
+# Take care about application:application 
